@@ -1,0 +1,169 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yummers</title>
+  <link rel="icon" type="image/png" href="images/yum.png">
+
+  <!--Css-->
+  <link rel="stylesheet" type="text/css" href="yummerscss.css">
+  
+  <!--icon-->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Borel&family=Darumadrop+One&family=Poppins:ital,wght@0,400;0,600;0,700;1,300&family=Barriecito&family=Jua&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>  
+
+<!--Navbar Start-->
+  <nav class="navbar">
+      <a href="#" class="navbar-logo">Yummers🍽️</a>
+
+      <div class="navbar-nav">
+        <a href="yummers.html">Home</a>
+        <a href="#About">About</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="#Contact">Contact</a>
+      </div>
+
+         <div class="sidebar">
+        <a href="yummers.html">Home</a>
+        <a href="#About">About</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="#Contact">Contact</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="bookmark"><i data-feather="bookmark"></i></a>
+        <a href="#" id="burger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!--feather-->
+    <script>
+      feather.replace();
+    </script>
+
+    <!--js sidebar-->
+    <script>
+        const sidebar = document.querySelector('.sidebar');
+
+        // Ketika burger-menu di klik
+        document.querySelector('#burger-menu').onclick = () => {
+            sidebar.classList.toggle('active');
+        };
+
+        //Klik di luar sidebar untuk menghilangkan nav
+        const burger = document.querySelector('#burger-menu');
+
+        document.addEventListener('click', function(e) {
+          if(!burger.contains(e.target) && !sidebar.contains(e.target)) {
+          sidebar.classList.remove('active');
+          }
+        });
+    </script>
+
+ <!--about section start-->
+   <section id="artikel" class="artikelhom">
+  <h2>Brownies</h2>
+  <div class="artikelhome">
+    <img src="images/brownies.jpg" alt="Yummers🍽️" width="250px" height="250px">
+    <h3>Bahan - bahan yang perlu disiapkan :</h3>
+<div class="artikelhomey">
+      <p>
+        <br>Bahan A:</br>
+        <br>260 gr Marvel Dark Compound Chocolate Buttons</br>
+        <br>50 gr mentega tawar, 50 gr dutch butter / margarin, 50 gr minyak</br>
+
+<br>Bahan B:</br>
+<br>120 gr dark brown sugar, 120 gr gula pasir, 200 gr telur, 6 gr garam, 2 gr espresso, 1 sdm air hangat, dan 1 sdm perisa vanila</br>
+
+<br>Bahan C:</br>
+<br>100 gr tepung terigu protein sedang, dan 5 gr bubuk cokelat</br>
+
+<br>Bahan D (topping):</br>
+<br>50 gr Marvel Chocolate Chips (masing-masing loyang), dan Garam laut kasar</br></p>
+    </div>
+</section>
+
+<section id="artikel" class="artikelhom">
+  <div class="artikelhome">
+    <h3>Langkah - langkah pembuatan :</h3>
+<div class="artikelhomey">
+<p>
+<br>1. Panaskan oven di suhu 190 derajat celcius lalu siapkan loyang ukuran 30 cm x 10 cm, oles minyak alasi dengan baking paper </br>
+<br>2. Di dalam wajan, campurkan dutch butter, mentega tawar, dan minyak, lelehkan di api kecil lalu tuang ke dalam Marvel Dark Compound Chocolate Buttons, aduk rata hingga cokelat meleleh</br>
+<br>3. Di dalam mangkuk campurkan telur, gula pasir, dark brown sugar, perisa vanila, dan garam</br>
+<br>4. Larutkan kopi dengan air hangat lalu gabung ke dalam mangkuk, kocok hingga gula larut sekitar 4-5 menit</br>
+<br>5. Masukkan tepung terigu dan bubuk cokelat sambil disaring, aduk sesaat lalu tuang lelehan cokelat, aduk dengan spatula hingga rata</br>
+<br>6. Bagi dua adonan lalu tuang ke dalam loyang</br>
+<br>7. Taburkan Marvel Chocolate Chips, ratakan lalu taburkan sedikit garam laut</br>
+<br>8. Panggang di suhu 190 derajat selama 10 menit lalu turunkan di suhu 180 derajat celcius selama 20 menit</br>
+<br>9. Angkat brownies dan tunggu dingin atau hangat kuku kemudian potong kecil menjadi beberapa bagian</br>
+<br>10. Susun brownies secara menyamping ke dalam loyang yang telah dialasi baking paper. Panggang Kembali selama 4-5 menit di suhu 180 derajat celcius</br>
+<br>11. Keluarkan dari loyang, diamkan hingga dingin</br>
+<br>12. Fudgy brownie bites siap dihidangkan</br></p></div>
+   <!--about section end-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dZJbLSiCJLw?si=9n6VGUiD-7kMNgGn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <h3>Resep Brownies</h3>
+
+    <!--contact section start-->
+    <section id="Contact" class="contact">
+      <div class="container">
+        <h2><span>Contact</span> Us</h2>
+        <div class="contact-wrapper">
+          <div class="contact-form">
+            <form>
+              <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <input type="email" name="name" placeholder="Your Email">
+        </div>
+          <div class="form-group">
+          <textarea name="message" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+      </div>
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><i data-feather="phone"> +6281290086542</p>
+        <p><i data-feather="mail">info@yummers.com</p>
+        <p><i data-feather="map">34 Street, Jakarta, Indonesia</p>
+      </div>
+    </div>
+  </div>
+</section>
+    <!--contact section end-->
+
+    <!--footer section start-->
+    <footer>
+      <div class="social">
+        <a href="#"><i data-feather="instagram"></a>
+        <a href="#"><i data-feather="twitter"></a>
+        <a href="#"><i data-feather="youtube"></a>
+
+      <div class="links">
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#Contact">Contact</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">Aqilah Yura</a> | &copy; 2024.</p>
+      </div>
+    </footer>
+
+    <!--footer section end-->
+</body>
+</html>

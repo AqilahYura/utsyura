@@ -1,0 +1,164 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yummers</title>
+  <link rel="icon" type="image/png" href="images/yum.png">
+
+  <!--Css-->
+  <link rel="stylesheet" type="text/css" href="yummerscss.css">
+  
+  <!--icon-->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Borel&family=Darumadrop+One&family=Poppins:ital,wght@0,400;0,600;0,700;1,300&family=Barriecito&family=Jua&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>  
+
+<!--Navbar Start-->
+  <nav class="navbar">
+      <a href="#" class="navbar-logo">Yummers🍽️</a>
+
+      <div class="navbar-nav">
+        <a href="yummers.html">Home</a>
+        <a href="#About">About</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="#Contact">Contact</a>
+      </div>
+
+         <div class="sidebar">
+        <a href="yummers.html">Home</a>
+        <a href="#About">About</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="#Contact">Contact</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="bookmark"><i data-feather="bookmark"></i></a>
+        <a href="#" id="burger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!--feather-->
+    <script>
+      feather.replace();
+    </script>
+
+    <!--js sidebar-->
+    <script>
+        const sidebar = document.querySelector('.sidebar');
+
+        // Ketika burger-menu di klik
+        document.querySelector('#burger-menu').onclick = () => {
+            sidebar.classList.toggle('active');
+        };
+
+        //Klik di luar sidebar untuk menghilangkan nav
+        const burger = document.querySelector('#burger-menu');
+
+        document.addEventListener('click', function(e) {
+          if(!burger.contains(e.target) && !sidebar.contains(e.target)) {
+          sidebar.classList.remove('active');
+          }
+        });
+    </script>
+
+ <!--about section start-->
+   <section id="artikel" class="artikelhom">
+  <h2>Sate Ayam</h2>
+  <div class="artikelhome">
+  	<img src="images/sate.jpg" alt="Yummers🍽️" width="250px" height="250px">
+    <h3>Bahan - bahan yang perlu disiapkan :</h3>
+<div class="artikelhomey">
+      <p><br>Bahan marinasi:</br>
+<br>600 gr paha ayam filet; 3 siung bawang putih; 5 siung bawang merah; 1 sdt ketumbar 6 cm lengkuas; iris, 5 sdm kecap manis; 1 buah jeruk nipis; 1 sdt garam; 1 sdt kaldu bubuk / penyedap; ¼ sdt merica; 300 ml air</br>
+
+<br>Bahan saus:</br>
+<br>120 gr kacang goreng; 3 siung bawang putih. potong; 5 siung bawang merah, potong; 4 buah cabai merah keriting, potong; 50 gr; gula merah; 3 lembar daun jeruk; 500 ml air; 2 sdm kecap manis; ¼ sdt garam; Minyak untuk menumis</br>
+
+<br>Lainnya:</br>
+<br>Margarin</br>
+
+<br>Pelengkap:</br>
+<br>Bawang merah iris; Cabai rawit merah rebus; Ketupat; Jeruk limau</br></p>
+    </div>
+</section>
+
+<section id="artikel" class="artikelhom">
+  <div class="artikelhome">
+    <h3>Langkah - langkah pembuatan :</h3>
+<div class="artikelhomey">
+<p>
+<br>1. Potong ayam memanjang lalu pindahkan ke dalam mangkuk</br>
+<br>2. Blender bawang merah, bawang putih, lengkuas, ketumbar, dan air hingga halus lalu tuang ke dalam ayam</br>
+<br>3. Masukkan kecap manis, garam, kaldu bubuk, merica, dan perasan jeruk nipis, aduk rata kemudian tutup dengan cling wrap, masukkan ke dalam kulkas semalaman</br>
+<br>4. Untuk saus, panaskan sedikit minyak lalu tumis cabai keriting, bawang putih, dan bawang merah, sisihkan</br>
+<br>5. Blender kacang, air dan tumisan bawang hingga halus lalu masak kembali</br>
+<br>6. Tambahkan gula merah, daun jeruk, kecap manis, dan garam, masak di api kecil sambil diaduk hingga mengental</br>
+<br>7. Tusukkan sate dengan tusuk sate, panaskan wajan kemudian masukkan sedikit margarin </br>
+<br>8. Masukkan sate ke dalam wajan, masak hingga kedua sisi kecokelatan, kecilkan api lalu tutup wajan, masak sesaat</br>
+<br>9. Sate khas senayan siap disajikan dengan cabai rawit, jeruk limau, ketupat, dan irisan bawang merah sebagai pelengkap</br></p></div>
+   <!--about section end-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e5-WcIiO_rQ?si=B-0oQ5hnn144zqXa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <h3>Resep Sate Ayam</h3>
+
+    <!--contact section start-->
+    <section id="Contact" class="contact">
+      <div class="container">
+        <h2><span>Contact</span> Us</h2>
+        <div class="contact-wrapper">
+          <div class="contact-form">
+            <form>
+              <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <input type="email" name="name" placeholder="Your Email">
+        </div>
+          <div class="form-group">
+          <textarea name="message" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+      </div>
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><i data-feather="phone"> +6281290086542</p>
+        <p><i data-feather="mail">info@yummers.com</p>
+        <p><i data-feather="map">34 Street, Jakarta, Indonesia</p>
+      </div>
+    </div>
+  </div>
+</section>
+    <!--contact section end-->
+
+    <!--footer section start-->
+    <footer>
+      <div class="social">
+        <a href="#"><i data-feather="instagram"></a>
+        <a href="#"><i data-feather="twitter"></a>
+        <a href="#"><i data-feather="youtube"></a>
+
+      <div class="links">
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#Contact">Contact</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">Aqilah Yura</a> | &copy; 2024.</p>
+      </div>
+    </footer>
+
+    <!--footer section end-->
+</body>
+</html>
